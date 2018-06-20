@@ -1,0 +1,48 @@
+
+/* 
+	Ai Nguyen-Trieu
+   	CSE 154
+   	4/25/18
+   	TA: Conner Ardman
+   	Assignment #4
+
+   	This assignment is about using my understanding of basic CSS 
+   	to create a webpage as the basis for expected appearance.
+   	This css style page is for the fifteen html and fifteen javascript file
+*/
+@import url('https://fonts.googleapis.com/css?family=Bubblegum+Sans');
+
+body {
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 14pt;
+	text-align: center;
+	width: 80%;
+}
+
+/* This is what the whole puzzle piece looking like */
+#puzzle-area {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 400px;
+	height: 400px;
+}
+
+/* This is the style for each individual tile of the whole puzzle*/
+.puzzleTile {
+	position: absolute;
+	width: 90px;
+	height: 90px;
+	border: 5px solid black;
+	font-size: 40pt;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/*This is the style when the user hover over the tile*/
+.moveable:hover {
+	border: 5px solid red;
+	cursor: pointer;
+	color: red;
+}
