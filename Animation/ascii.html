@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- 
+	Ai Nguyen-Trieu
+   	CSE 154
+   	4/18/18
+   	TA: Conner Ardman
+   	Assignment #3
+
+   	This page contains the overall apperance for the asciimation
+   	The user can control the animation art that they want to play
+   	They can control the speed and the size of the animation art
+   	They can control when to play or stop the animation art
+-->
+<html lang="en">
+<head>
+	<title>ASCIImation</title>
+	<link type="text/css" href="ascii.css" rel="stylesheet">
+	<script src=" https://webster.cs.washington.edu/js/asciimation/animations.js"></script>
+	<script src="custom-animation.js"></script>
+	<script src="ascii.js"></script>
+</head>
+
+<body>
+	<h1>ASCIImation</h1>
+	<textarea id="textarea" rows="20" cols="80"></textarea>
+
+	<section>
+		<fieldset>
+			<legend>Play Controls</legend>
+			<button id="start">Start</button>
+			<button id="stop">Stop</button>
+			
+		</fieldset>
+
+		<fieldset>
+			<legend>Animation</legend>
+			<select id="animation">
+				<!-- I can't figure out how to leave it blank without an error -->
+				<option>Blank</option> 
+				<option>Exercise</option>
+				<option>Juggler</option>
+				<option>Bike</option>
+				<option>Dive</option>
+				<option>Ducks</option>
+				<option>Pony</option>
+				<option>Custom</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Size</legend>
+			<select id="size">
+				<option value="7pt">Tiny</option>
+				<option value="10pt">Small</option>
+				<option value="12pt" selected="selected">Medium</option>
+				<option value="16pt">Large</option>
+				<option value="24pt">Extra Large</option>
+				<option value="32pt">XXL</option>
+			</select>
+		</fieldset>
+
+		<fieldset>
+			<legend>Speed</legend>
+			<label>
+				<input type="radio" name="speed" value="50">Turbo
+			</label>
+			<label>
+				<input type="radio" name="speed" value="250" checked="checked">Normal
+			</label>
+			<label>
+				<input type="radio" name="speed" value="1500">Slo-mo
+			</label>
+		</fieldset>
+	</section>
+
+	<footer id="w3c">
+		<a href="https://validator.w3.org/#validate_by_input">
+			<img src="https://webster.cs.washington.edu/images/w3c-html-blue.png" alt="html w3c">
+		</a>
+
+		<a href="https://jigsaw.w3.org/css-validator/#validate_by_input">
+			<img src="https://webster.cs.washington.edu/images/w3c-css-blue.png" alt="css w3c">
+		</a>
+
+		<a href="https://courses.cs.washington.edu/courses/cse154/17au/jslint/jslint.html">
+			<img src="https://webster.cs.washington.edu/images/w3c-js-blue.png" alt="js lint">
+		</a>
+	</footer>
+
+</body>
+</html>

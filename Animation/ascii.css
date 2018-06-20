@@ -1,0 +1,66 @@
+
+/* 
+	Ai Nguyen-Trieu
+   	CSE 154
+   	4/18/18
+   	TA: Conner Ardman
+   	Assignment #3
+
+   	This assignment is about using my understanding of basic CSS 
+   	to create a webpage as the basis for expected appearance.
+   	This css style page is for the ascii html file
+*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+	background-color: #9999FF;
+	font-size: 12pt;
+	font-family: 'Roboto', monospace;
+}
+
+h1 {
+	font-size: 30pt;
+	font-weight: bold;
+	margin: 0px;
+	text-align: center;
+	
+}
+
+#textarea {
+	width: 90%;
+	height: 400px;
+	display: flex;
+	margin-left: 5%;
+	margin-right: 5%;  
+	font-family: monospace; 
+}
+
+#w3c {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+#w3c img {
+	width: 70px;
+}
+
+fieldset {
+	border-width: 5px;
+	border-radius: 10px;
+	border-color: black;
+	display: inline-block;
+}
+
+legend {
+	font-size: 14pt;
+	text-align: left;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+}
+
+option {
+	font-family: 'Arial', sans-serif;
+}
