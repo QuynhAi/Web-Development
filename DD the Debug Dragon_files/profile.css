@@ -1,0 +1,173 @@
+/* Ai Nguyen-Trieu
+   	CSE 154
+   	4/11/18
+   	TA: Conner Ardman
+   	Assignment #2
+
+   	This assignment is about using my understanding of basic CSS 
+   	to create a webpage as the basis for expected appearance
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif|Rammetto+One');
+
+body {
+	background-image: url(https://webster.cs.washington.edu/images/hw02/background.png);
+	font-family: 'Bree Serif', serif;
+}
+
+/* Centered main section*/
+.flex-container {
+	width: 80%;
+	background: white;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	/* text-align did not work, so I did margin auto instead*/
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+#profile-banner {
+	position: absolute;
+	left: 2%;
+}
+
+
+/* the profile picture of the dragon*/
+#profile-banner img {
+	border-radius: 50%;
+	margin-top: 90%;
+	margin-left: -2%;
+	height: 200px;
+	width: 200px;
+	border: solid;
+	border-color: white;
+	border-width: 10px;
+	
+}
+
+/* the background/cover photo of dragon working */
+#profile {
+	background-image: url(https://webster.cs.washington.edu/images/hw02/banner.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 350px;
+	position: relative;
+}
+
+/* the endorsement background*/
+#theEndorsement {
+	background-image: url(https://webster.cs.washington.edu/images/hw02/clouds.png);
+	background-color: skyblue;
+}
+
+.review {
+	background: white;
+	margin-bottom: 15px;
+	padding: 10px; 
+	border-left: solid;
+	border-width: 10px;
+	border-color: #cccaca;
+	text-align: center;
+}
+
+.information, .endorsement{
+	width: 50%;
+}
+
+
+.detail, #friends {
+	display: flex;
+	flex-direction: column;
+}
+
+.information {
+	display: flex;
+	float: left;
+}
+
+/* padding for all content blocks*/
+#info, #theEndorsement, #friends {
+	display: flex;
+	padding-right: 5%;
+	padding-left: 5%;
+	padding-bottom: 2%;
+	align-items: center;
+}
+
+#theEndorsement {
+	flex-direction: row-reverse;
+	justify-content: center;
+}
+
+
+/* title for each content blocks*/
+h1, #theEndorsement h2, #friends h2 {
+	font-family: 'Rammetto One', cursive;
+	font-size: 2.5vw;
+	text-align: center;
+}
+
+/* The main headline*/
+h1 {
+	font-size: 3vw;
+	padding-top: 10px;
+	text-shadow: #999999 3px 3px 1px;
+}
+
+/* the two big profile photos*/
+.endorsement img, .information img {
+	max-height: 600px;
+	max-width: 400px;
+	width: 30vw;	
+}
+
+footer div, .list {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+footer div {
+	background-color: #5f5b5b;
+}
+
+/* size of friends image*/
+.list img {
+	padding: 10px;
+	height: 300px;
+	width: 200px;
+}
+
+footer img{
+	vertical-align: middle;
+	height: 40px;
+}
+
+/* name of people who endorsed the dragon*/
+.name {
+	font-style: italic;
+	text-align: center;
+}
+
+/* horizontal line width, and info column width */
+hr, .column {
+	width: 40%;
+}
+
+span {
+	letter-spacing: 5px;
+}
+
+.dragon-info {
+	display: flex;
+	justify-content: center;
+}
+
+/* info column*/
+.column {
+	display: flex;
+	flex-direction: row;
+}
