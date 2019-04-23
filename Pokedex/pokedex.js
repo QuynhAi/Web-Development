@@ -1,5 +1,4 @@
 /* Ai Nguyen-Trieu
-  CSE 154
   5/8/18
   TA: Conner Ardman
   Homework #5
